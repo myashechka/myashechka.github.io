@@ -1,0 +1,100 @@
+main{
+    background: rgba(210, 180, 93, 0.655);
+}
+
+.text
+{
+    text-align: center;
+    padding: 20px;
+
+}
+
+h1{
+    margin-top: 10vh;
+    font-family: "Days_One";
+    font-size: 2.5em;
+}
+
+.projects
+{
+    margin: 10vh 5vw 3vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content:center;
+}
+
+.card
+{
+    width: 35vw;
+    height: 600px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 15px;
+    margin: 50px;
+    padding: 40px;
+    transition: 0.5s;
+    border: 6px solid white;
+
+}
+
+.card:hover{
+    border-color: rgb(95, 173, 116) ;
+}
+
+.card:hover h2{
+    color: rgb(95, 173, 116) ;
+}
+
+.card img
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.card h2
+{
+    margin: 3vh 0;
+    line-height: 1.9em;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.card p
+{
+    line-height: 1.7em;
+}
+
+.card:nth-child(4) img, .card:nth-child(6) img{
+    width: 190px;
+}
+
+@media (max-width: 784px)
+{
+    h1{
+        margin-top: 0;        
+        font-size: 3vh;
+    }
+    h3{
+        margin-top: 1.5vh;   
+        font-size: 2vh;
+    }
+    .projects{
+        margin: 0;
+    }
+
+    .card{
+        width: auto;
+        height: fit-content;
+    }
+
+    .card h2{
+        font-size: 2vh;
+    }
+    .card p{
+        line-height: 3vh;
+        font-size: 2vh;
+    }
+}

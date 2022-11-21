@@ -1,0 +1,198 @@
+.container_staffs
+{
+    background: rgba(215, 214, 214, 0.587);
+    height:max-content;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container_staffs h1
+{
+    font-family: 'Days_One';
+    color: rgb(59, 111, 74);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.staffs
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.div_staff
+{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 10px;
+    width: 20vw;
+    margin: 10px 20px;
+    
+}
+
+.img_staff
+{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+
+.div_staff:nth-child(1) .img_staff
+{
+    background: no-repeat center/100% url("../image/staff1.jpg");
+}
+
+.div_staff:nth-child(2) .img_staff
+{
+    background: no-repeat center/100% url("../image/staff6.jpg");
+}
+
+.div_staff:nth-child(3) .img_staff
+{
+    background: no-repeat center/110% url("../image/staff5.jpg");
+}
+
+.div_staff:nth-child(4) .img_staff
+{
+    background: no-repeat center/110% url("../image/staff2.jpg");
+}
+
+.div_staff:nth-child(5) .img_staff
+{
+    background: no-repeat center/110% url("../image/staff4.jpg");
+}
+
+.div_staff:nth-child(6) .img_staff
+{
+    background: no-repeat center/110% url("../image/staff7.jpg");
+}
+
+.div_staff:nth-child(7) .img_staff
+{
+    background: no-repeat center/110% url("../image/staff3.jpg");
+}
+
+.div_staff:hover .img_staff
+{
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
+
+}
+
+.div_staff p
+{
+    font-style: italic;
+}
+
+.div_staff h3
+{
+    font-family: 'Days_One';
+    color: rgb(59, 111, 74);
+}
+
+.div_adress
+{
+    margin: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: fit-content;
+    padding: 10px;
+}
+
+.div_adress::before
+{
+    content:"";
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background: rgb(59, 111, 74);
+
+}
+.adress
+{
+    width: 40%;
+}
+
+.adress a, .adress p
+{
+    display: block;
+    margin: 10px 5px;
+    transition: 0.5s;
+    font-size: 1vw;
+}
+
+.adress a:hover, .adress p:hover
+{
+    color: rgb(59, 111, 74);
+}
+
+.adress h2
+{
+    font-family: 'Days_One';
+    color: rgb(59, 111, 74);
+    font-size: 1.7vw;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 764px)
+{
+    .div_staff
+    {
+        width: 100%;
+    }
+
+    .img_staff
+    {
+        width: 14vh;
+        height: 14vh;
+        border-radius: 7vh;
+    }
+
+    .div_staff:hover .img_staff
+    {
+        width: 16vh;
+        height: 16vh;
+        border-radius: 8vh;
+    }
+
+    .div_adress
+    {
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .adress h2
+{
+    font-size: 3vh;
+}
+    .adress
+    {
+        margin: 3vh 0;
+        width: 100%;
+    }
+
+    .adress a, .adress p{
+        font-size: 2vh;
+    }
+
+    
+
+    .div_adress::before {
+        top: 50%;
+        left:0;
+        width: 100%;
+        height: 4px;
+        background: rgb(59, 111, 74);
+    }
+}
