@@ -30,7 +30,7 @@ h2
 .about_text
 {
     width: 33%;
-    height:53vh;
+    height:50vh;
     background-color: rgba(210, 180, 93, 0.655);
     padding: 40px;
     border-radius: 15px;
@@ -38,7 +38,7 @@ h2
 
 .about_text p
 {
-    font-size: 1.1vw;
+    font-size: 1vw;
     line-height: 1.3em;
     font-weight: 500;
     text-indent: 20px;
